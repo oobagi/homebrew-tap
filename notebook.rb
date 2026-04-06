@@ -11,7 +11,7 @@ class Notebook < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/oobagi/notebook-cli/releases/download/v1.0.0/notebook-cli_1.0.0_darwin_amd64.tar.gz"
-      sha256 "c27c3441a65eec0d5750ae0d082480c11d3d859f9ba3a11423e16ec56b8116fc"
+      sha256 "72f55bb8a6a60ef99e6dacd2aec6caac5b3a333b0bb8184f9403261a5f026754"
 
       define_method(:install) do
         bin.install "notebook"
@@ -19,7 +19,7 @@ class Notebook < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/oobagi/notebook-cli/releases/download/v1.0.0/notebook-cli_1.0.0_darwin_arm64.tar.gz"
-      sha256 "24e6fda4bc0236c0f2f8d8ba65b97dd7da8b4fdb3586d5c24eafc5c1b8df23e4"
+      sha256 "3257cd3bf83f18a75954cbed45d36189ecb120cc81c7cea5565db1bddc9ac891"
 
       define_method(:install) do
         bin.install "notebook"
@@ -30,14 +30,14 @@ class Notebook < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/oobagi/notebook-cli/releases/download/v1.0.0/notebook-cli_1.0.0_linux_amd64.tar.gz"
-      sha256 "1c27dfeee5050523abd481284d39b076ae0d11f4c76c1e4d10e04dd5062a7bbf"
+      sha256 "a1cb29a47040ef0870e72e3f372cb5c97f9908e2667cfd97166b8e7c2a75a1be"
       define_method(:install) do
         bin.install "notebook"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/oobagi/notebook-cli/releases/download/v1.0.0/notebook-cli_1.0.0_linux_arm64.tar.gz"
-      sha256 "ce10ad9b5fe05be403ffc7295493b944c99ebbe6f1a04fcb4fbce0ee82c5b044"
+      sha256 "364a6ed026b78690c929008507af17a983f80bdcb1db802a0c3394d90352979a"
       define_method(:install) do
         bin.install "notebook"
       end

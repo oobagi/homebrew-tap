@@ -10,7 +10,7 @@ class RecycleCli < Formula
   depends_on :macos
 
   url "https://github.com/oobagi/recycle-cli/releases/download/v2.0.0/recycle-cli_2.0.0_darwin_all.tar.gz"
-  sha256 "4bb424fccf43893bc44c52895d6078d3505e96b241299443fb6b39b039a58aa1"
+  sha256 "8b73dd4b7e9f1556696038ad3e61477d0767b45f0622f145d1069e60cbac687f"
 
   define_method(:install) do
     bin.install "recycle"

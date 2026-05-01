@@ -5,21 +5,21 @@
 class Notebook < Formula
   desc "A terminal-native note editor with a block-based editing experience"
   homepage "https://github.com/oobagi/notebook-cli"
-  version "1.5.4"
+  version "1.5.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/oobagi/notebook-cli/releases/download/v1.5.4/notebook-cli_1.5.4_darwin_amd64.tar.gz"
-      sha256 "33934bd3c479326a26769b3439620e065983ddeb490169d70d1a52944ddce55b"
+      url "https://github.com/oobagi/notebook-cli/releases/download/v1.5.5/notebook-cli_1.5.5_darwin_amd64.tar.gz"
+      sha256 "2714529a2e8ed6d305422ee16b972da8e1af4c6a6418f2494c47857fb9a73d6b"
 
       define_method(:install) do
         bin.install "notebook"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/oobagi/notebook-cli/releases/download/v1.5.4/notebook-cli_1.5.4_darwin_arm64.tar.gz"
-      sha256 "ee2be57e9a7ce359334793593fbe3b257adfa940b56b7178f22fd4f268794307"
+      url "https://github.com/oobagi/notebook-cli/releases/download/v1.5.5/notebook-cli_1.5.5_darwin_arm64.tar.gz"
+      sha256 "74ed304801039217653c9422cc68742c93d9e63f68f7b44cf44c8e1900a3207b"
 
       define_method(:install) do
         bin.install "notebook"
@@ -29,15 +29,15 @@ class Notebook < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/oobagi/notebook-cli/releases/download/v1.5.4/notebook-cli_1.5.4_linux_amd64.tar.gz"
-      sha256 "c3c1ac12ff5d5e0fb4540857ee3a137a2e168f8029068931eb4870d8ae513be3"
+      url "https://github.com/oobagi/notebook-cli/releases/download/v1.5.5/notebook-cli_1.5.5_linux_amd64.tar.gz"
+      sha256 "2a9aff3d297953ee8cd7fcd0f48de65ec94d51eb3395b7fa3cf4cdb3dbdc9e73"
       define_method(:install) do
         bin.install "notebook"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/oobagi/notebook-cli/releases/download/v1.5.4/notebook-cli_1.5.4_linux_arm64.tar.gz"
-      sha256 "556eb7b63cc7946d67559c7d303a87f65018f860db5188463b0e015ee0422dbd"
+      url "https://github.com/oobagi/notebook-cli/releases/download/v1.5.5/notebook-cli_1.5.5_linux_arm64.tar.gz"
+      sha256 "916b15a15e6408cfa7fa47215f2603ce7c3ca7e3f2b9ca8926ee89554af74ebe"
       define_method(:install) do
         bin.install "notebook"
       end
